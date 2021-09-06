@@ -1,0 +1,53 @@
+{
+  "examples": [
+    "{\n  \"appId\": \"com.contoso.awesomeapp\",\n\"settings\": {\n    \"username\": \"someuser\"\n  }\n}"
+  ],
+  "description": "Xappium UI Test configuration",
+  "type": "object",
+  "properties": {
+    "appPath": {
+      "type": [ "string", "null" ],
+      "description": "This is the path to the compiled app. Note the iOS Simulator uses the .app not .ipa"
+    },
+    "platform": {
+      "type": [ "string", "null" ],
+      "enum": [
+        "Android",
+        "iOS",
+        "macOS",
+        "macCatalyst",
+        "WinUI",
+        "Tizen",
+        "Web"
+      ]
+    },
+    "appId": {
+      "type": [ "string", "null" ],
+      "description": "The id of your app like `com.company.awesomeapp`"
+    },
+    "deviceName": {
+      "type": [ "string", "null" ]
+    },
+    "udid": {
+      "type": [ "string", "null" ]
+    },
+    "osVersion": {
+      "type": [ "string", "null" ]
+    },
+    "screenshotsPath": {
+      "type": [ "string", "null" ]
+    },
+    "viewSelectorStrategy": {
+      "type": [ "string", "null" ]
+    },
+    "appiumServer": {
+      "type": [ "string", "null" ]
+    },
+    "capabilities": {
+      "type": [ "object", "null" ],
+    },
+    "settings": {
+      "type": [ "object", "null" ]
+    }
+  }
+}

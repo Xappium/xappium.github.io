@@ -1,0 +1,3 @@
+# Getting Started
+
+In addition to the Xappium UITest core, additional support packages are shipped for each of the 3 major Unit Test Frameworks. The support library provides a `XappiumTestBase` class which you can use for your actual UI Tests. The base class is setup with an understanding of how the specific test framework handles test initialization and post test cleanup. This will automatically start and stop the app between test runs.
