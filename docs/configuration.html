@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UI Test Configuration | Xappium UITest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="UI Test Configuration | Xappium UITest ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/xappium-bot.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ui-test-configuration">UI Test Configuration</h1>
+
+<p>Xappium makes every attempt to make configuration as easy as possible. It is important to recognize that this may allow you to make a test configuration as simple or complex as your needs require.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you are using the Xappium CLI most of the configuration values can be omitted as they will be automatically provided by the CLI.</p>
+</div>
+<h2 id="using-the-uitestjson">Using the uitest.json</h2>
+<p>By default Xappium looks for a file called <code>uitest.json</code>. This file can either be an EmbeddedResource in the UI Test project, or can be copied to the output directory. If the <code>uitest.json</code> is embedded it will merge with one that was copied to the output directory. This functionality may provide you the ability to provide specific overrides for iOS or Android by changing the build configuration to select something like <code>android-uitest.json</code> to Embed. It's important to note that when looking for an Embedded uitest.json, it only needs to end with uitest.json, and it does not need to be named exactly as <code>uitest.json</code>.</p>
+<p>To make it easier to configure the <code>uitest.json</code> has been setup with a schema to make it easier for you to get intellisense when creating the file manually.</p>
+<pre><code class="lang-json">{
+  &quot;$schema&quot;: &quot;https://xappium.github.io/uitest.schema.json&quot;
+}
+</code></pre>
+<h3 id="overriding-xappium-default-capabilities-for-appium">Overriding Xappium default Capabilities for Appium</h3>
+<p>Appium expresses several &quot;Capabilities&quot; for each platform.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Platform</th>
+<th style="text-align: center;">Specific Capabilities</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Generic Appium</td>
+<td style="text-align: center;"><a href="https://appium.io/docs/en/writing-running-appium/caps/">Docs</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">XCUITest</td>
+<td style="text-align: center;"><a href="https://github.com/appium/appium-xcuitest-driver#capabilities">ReadMe</a></td>
+</tr>
+<tr>
+<td style="text-align: center;">Espresso</td>
+<td style="text-align: center;"><a href="https://github.com/appium/appium-espresso-driver#capabilities">ReadMe</a></td>
+</tr>
+</tbody>
+</table>
+<p>In the event that you require an additional capability or should you need to completely override the capability that Xappium provides, you can do so by adding them to the capabilities dictionary in the <code>uitest.json</code> like the following:</p>
+<pre><code class="lang-json">{
+  &quot;capabilities&quot;: {
+    &quot;showGradleLog&quot;: &quot;true&quot;
+  }
+}
+</code></pre>
+<h2 id="using-environment-variables">Using Environment Variables</h2>
+<p>In addition to using the json file to configure your tests, you can additionally configure your tests using environment variables.</p>
+<ul>
+<li>UITEST_APPIUMSERVER</li>
+<li>UITEST_DEVICENAME</li>
+<li>UITEST_OSVERSION</li>
+<li>UITEST_UDID</li>
+<li>UITEST_PLATFORM</li>
+<li>UITEST_APP_PATH</li>
+<li>UITEST_APPID</li>
+<li>UITEST_SCREENSHOT_PATH</li>
+<li>UITEST_ADDITIONAL_CAPABILITIES</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2021 Xappium
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

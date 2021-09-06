@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Page Object Model | Xappium UITest </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Page Object Model | Xappium UITest ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/xappium-bot.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="page-object-model">Page Object Model</h1>
+
+<p>The Page Object Model of UI Testing is a fantastic way of logically recreating the application with a shadow API that allows you to quickly and easily write UI Tests that make sense. For more information about how the Page Object Model works, be sure to check out <a href="https://www.youtube.com/watch?v=4VR861BWkiU">this video</a> from #XamDevSummit 2019 by Sweeky.</p>
+<h2 id="setting-up-your-first-page">Setting up your first Page</h2>
+<p>To start let's make a few assumptions. For this we'll assume that you have a page in your app's codebase called <code>LoginPage</code>. That page has two text fields, one for the username and one for the password. Finally it has a Login button that when pressed will result in some sort of behavior. To start we'll create a new class in our UI Test project that is also called <code>LoginPage</code>. That class will inherit from Xappium's <code>BasePage</code>, and provide the name of an element the will only exist on that page. Next we'll create some additional constants for the other elements on the Page that we'll want to interact with like the following:</p>
+<pre><code class="lang-csharp">public class LoginPage : BasePage
+{
+    protected override string Trait =&gt; LoginButton;
+
+    private const string UsernameEntry = nameof(UsernameEntry);
+    private const string PasswordEntry = nameof(PasswordEntry);
+    private const string LoginButton = nameof(LoginButton);
+}
+</code></pre>
+<p>Now that we have a page to work with, we'll need to add some methods to make it easier to work with when we write our tests. We can start with a method to enter a username. After we enter the username we can take a screenshot and finally make an assertion that the text in the returned element matches the username that we entered.</p>
+<pre><code class="lang-csharp">public LoginPage EnterUsername(string username)
+{
+    var element = Engine.EnterText(UsernameEntry, username);
+    Engine.Screenshot($&quot;Entered username {username}&quot;);
+    Assert.Equal(username, element.Text);
+    return this;
+}
+</code></pre>
+<p>Now that we can enter a username, we will want to enter a password into the password field. Note that here we do not do an assertion that the element's text matches the password we provided. This is due to a limitation of Appium that just like your user it is not able to read the text from a protected input field that displays something like <code>********</code>.</p>
+<pre><code class="lang-csharp">public LoginPage EnterPassword(string password)
+{
+    var element = Engine.EnterText(PasswordEntry, password);
+    Engine.Screenshot(&quot;EnteredPassword&quot;);
+    return this;
+}
+</code></pre>
+<p>Finally we'll add a method to tap the login button. You will notice that unlike the first two methods which provided a fluent API to return the LoginPage, this method simply returns void. This is, itself part of the PageObjectModel in which actions which should terminate the presence of the Page should return a void.</p>
+<pre><code class="lang-csharp">public void TapLoginButton()
+{
+    Engine.Tap(LoginButton);
+    Engine.Screenshot(&quot;Tapped Login Button&quot;);
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright 2021 Xappium
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
