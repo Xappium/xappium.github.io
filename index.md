@@ -10,4 +10,4 @@ Appium has a lot of advantages over Xamarin.UITest, however it can be complex to
 
 ## Who created Xappium
 
-Xappium was built largely by [Dan Siegel](https://github.com/sponsor/dansiegel), with collaboration and help from the .NET MAUI team including [Jon Dick](https://github.com/redth) & [Shane Neuville](https://github.com/pureween).
+Xappium was built largely by [Dan Siegel](https://github.com/sponsors/dansiegel), with collaboration and help from the .NET MAUI team including [Jon Dick](https://github.com/redth) & [Shane Neuville](https://github.com/pureween).
