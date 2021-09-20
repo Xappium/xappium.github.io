@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/configuration.html",
-          "hash": "XJ08DuOKEw07Bh1tckz8dw=="
+          "hash": "TFSEl0LHI+tzAo12YZ5boA=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/intro.html",
-          "hash": "63Bbl4NNqFpRIcVx7R3pZQ=="
+          "hash": "+ekzwp0ctO2gGTJqfsBKRQ=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/page-object-model.html",
-          "hash": "sZU5ocbafhQtBdBFb6qipw=="
+          "hash": "aMxhC3VOvF49lnoniZ7YGw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/test-platforms.html",
-          "hash": "SnuMrTlYeU52UYZs/PU/TQ=="
+          "hash": "3/DoXcI4oaoxUV044gA2Pw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,315 @@
       "output": {
         ".html": {
           "relative_path": "docs/writing-tests.html",
-          "hash": "GnrK0Za270YKyXR80o+FzA=="
+          "hash": "jcrsQNGiw8pX2nvxfLAN3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-144x144.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-144x144.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-192x192.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-192x192.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-36x36.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-36x36.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-48x48.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-48x48.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-72x72.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-72x72.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/android-icon-96x96.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/android-icon-96x96.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-114x114.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-114x114.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-120x120.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-120x120.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-144x144.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-144x144.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-152x152.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-152x152.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-180x180.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-180x180.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-57x57.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-57x57.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-60x60.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-60x60.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-72x72.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-72x72.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-76x76.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-76x76.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon-precomposed.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon-precomposed.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/apple-icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/apple-icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/browserconfig.xml",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/browserconfig.xml"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/favicon-16x16.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/favicon-16x16.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/favicon-32x32.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/favicon-32x32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/favicon-96x96.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/favicon-96x96.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/manifest.json",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/manifest.json"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/ms-icon-144x144.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/ms-icon-144x144.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/ms-icon-150x150.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/ms-icon-150x150.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/ms-icon-310x310.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/ms-icon-310x310.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon/ms-icon-70x70.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon/ms-icon-70x70.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/banner.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/banner.jpg"
         }
       },
       "is_incremental": false,
@@ -92,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "cPveSPwL+5evvDvGgDnj5g=="
+          "hash": "ayjsQ3PN7UApkLtGAqBXTw=="
         }
       },
       "is_incremental": false,
