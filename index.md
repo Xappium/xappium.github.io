@@ -1,4 +1,6 @@
-# Xappium UI Test
+![Xappium UI Test](images/banner.jpg "Xappium UI Test")
+
+# Welcome
 
 Welcome to Xappium UITest. There are a lot of options out there, and we believe Appium is pretty awesome but by itself it's really just too painful to easily write UI Tests that are largely cross platform. For those .NET developers coming from a Xamarin.Forms or .NET Maui background you're already used to writing Cross Platform apps that share nearly all of the code regardless of whether you're building an iOS or Android app. Now with Xappium you can write UI Tests leveraging the power of Appium that similarly share an abstraction layer that let you write UI Tests once.
 
