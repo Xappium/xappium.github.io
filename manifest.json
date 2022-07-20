@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/configuration.html",
-          "hash": "TFSEl0LHI+tzAo12YZ5boA=="
+          "hash": "ZzRth0P52cfapIoObrJa0w=="
         }
       },
       "is_incremental": false,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/intro.html",
-          "hash": "+ekzwp0ctO2gGTJqfsBKRQ=="
+          "hash": "sZ8AhBlehL7P8kUsYgmqlg=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/page-object-model.html",
-          "hash": "aMxhC3VOvF49lnoniZ7YGw=="
+          "hash": "UnDS9ZR6l5SybVvX2eIv4Q=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/test-platforms.html",
-          "hash": "3/DoXcI4oaoxUV044gA2Pw=="
+          "hash": "v9/ygQDZzm0ObR2KeOvlWw=="
         }
       },
       "is_incremental": false,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/writing-tests.html",
-          "hash": "jcrsQNGiw8pX2nvxfLAN3g=="
+          "hash": "vlIPoti73eaWT0VVxQmseg=="
         }
       },
       "is_incremental": false,
@@ -400,7 +400,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "ayjsQ3PN7UApkLtGAqBXTw=="
+          "hash": "FmVxCebr5y7rhiQbKOsETg=="
         }
       },
       "is_incremental": false,
