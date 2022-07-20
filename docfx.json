@@ -22,7 +22,7 @@
     "dest": "_site",
     "globalMetadata": {
       "_appTitle": "Xappium UITest",
-      "_appFooter": "Copyright 2021 Xappium",
+      "_appFooter": "Copyright 2022 Xappium",
       "_appLogoPath": "images/xappium-bot.png"
     },
     "globalMetadataFiles": [],
